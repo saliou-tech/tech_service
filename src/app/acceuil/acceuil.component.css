@@ -1,0 +1,46 @@
+.color_grid{
+    position: relative;
+    min-height: 140px;
+    display: block;
+}
+.div_bar_search{
+    margin: 0 16px;
+    padding: 32px 0 8px 0;
+}
+.div_bar_search_1{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+}
+.Vd9D9{
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 16px;
+    color: hsl(0, 0%, 10%);
+    border: 2px solid hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 100%);
+    -webkit-appearance: none;
+    padding: 16px 24px;
+    -ms-flex: 1;
+    flex: 1;
+    height: 56px;
+}
+._2O-ZB{
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 14px;
+    transition: all 0.2s ease-in;
+    box-shadow: 1px 1px 3px -1px hsl(0, 0%, 90%);
+    box-shadow: 1px 1px 3px 0 hsla(0, 0%, 0%, .07);
+    background-color: #6ba229;
+    color: hsl(0, 0%, 100%);
+    padding: 16px 0;
+    margin-left: -2px;
+    width: 160px;
+
+}
+
+
