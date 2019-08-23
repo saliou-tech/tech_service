@@ -12,6 +12,26 @@
     display: -ms-flexbox;
     display: flex;
 }
+.page {
+    height: 100%;
+    position: relative;
+}
+.canvas {
+    position: relative;
+}
+.grid-container {
+    max-width: 1004px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page__canvas {
+    box-shadow: 0 0 15px -1px hsl(0, 0%, 40%);
+    position: relative;
+    z-index: 2;
+    min-height: 100%;
+}
 .Vd9D9{
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -1109,16 +1129,16 @@ a {
 
 ._3ePxY {
     height: 40px;
-    display: -ms-flexbox;
+    
     display: flex;
-    -ms-flex-align: center;
+    
     align-items: center;
-    -ms-flex-pack: center;
+    
     justify-content: center;
     margin: 0 4px 0 0;
-    -ms-flex: 1;
+    
     flex: 1;
-    -ms-flex-preferred-size: auto;
+    
     flex-basis: auto;
     text-decoration: none;
     padding: 7px 16px;
@@ -1222,6 +1242,16 @@ a {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 0;
+}
+.JHf2a {
+    color: hsl(0, 0%, 60%);
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    max-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 ._3tfm8 {
     display: inline-block;

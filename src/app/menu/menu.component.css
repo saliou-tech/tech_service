@@ -22,6 +22,10 @@
     
     text-decoration: none;
 }
+.page {
+    height: 100%;
+    position: relative;
+}
 .panier{
     color: hsl(0,0%,100%);
     display: inline-block;
