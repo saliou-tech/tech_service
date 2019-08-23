@@ -5,6 +5,9 @@
 .color_menu1_2{
     background-color: #262626;
 }
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
 
 .color_menu_3{
     background-color: #f5f5f5;
@@ -27,3 +30,7 @@
     
     text-decoration: none;
 }
+
+
+
+
