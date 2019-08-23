@@ -7,13 +7,15 @@ import { AcceuilComponent } from './acceuil/acceuil.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { ViewProductComponent } from './view-product/view-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AcceuilComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,

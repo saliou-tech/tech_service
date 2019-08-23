@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AcceuilComponent } from './acceuil/acceuil.component';
-import { MenuComponent } from './menu/menu.component';
-import { FooterComponent } from './footer/footer.component';
+
+import { ViewProductComponent } from './view-product/view-product.component';
 
 
 const routes: Routes = [
   { path: '', component: AcceuilComponent },
-  { path: 'menu', component: MenuComponent },
-  { path: 'footer', component: FooterComponent },
+  { path: 'view-product', component: ViewProductComponent },
+  
 ];
 
 @NgModule({

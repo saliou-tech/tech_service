@@ -1126,7 +1126,17 @@ a {
     display: inline-block;
     margin: 0 4px 0 0;
 }
+.large{
+    
+    width: 100%;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    position: relative;
 
+}
 ._3ePxY {
     height: 40px;
     
