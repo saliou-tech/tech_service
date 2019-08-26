@@ -8,6 +8,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { PanierComponent } from './panier/panier.component';
+import { ClientComponent } from './client/client.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ViewProductComponent } from './view-product/view-product.component';
     AcceuilComponent,
     MenuComponent,
     FooterComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    PanierComponent,
+    ClientComponent
   ],
   imports: [
     BrowserModule,

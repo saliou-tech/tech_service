@@ -3,11 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { AcceuilComponent } from './acceuil/acceuil.component';
 
 import { ViewProductComponent } from './view-product/view-product.component';
+import { PanierComponent } from './panier/panier.component';
+import { ClientComponent } from './client/client.component';
 
 
 const routes: Routes = [
   { path: '', component: AcceuilComponent },
   { path: 'view-product', component: ViewProductComponent },
+  { path: 'client', component: ClientComponent },
   
 ];
 
