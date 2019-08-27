@@ -1,0 +1,265 @@
+<app-menu></app-menu>
+<br><br>
+
+<section class="container">
+    <div  class="row">
+        <div  class="col-sm-8 border">
+            <br>
+            <div *ngIf = "this.isClient">
+                
+                <header class="e-fieldset__header -divider-bottom">
+                        <div class="e-fieldset__title">
+                            <h3 class="t-heading -size-s h-m0">
+                                Details du Client
+        
+                            </h3>
+                            <div class="e-fieldset__subtitle">
+                                <p class="t-body -size-m h-m0">
+                                    We do not sell your details or share them without your permission. Read more in our <a
+                                        target="_blank" href="https://envato.com/privacy">privacy policy</a>.
+                                </p>
+        
+                            </div>
+                        </div>
+                    </header><form class="">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Nom</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Prenom</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <footer class="e-fieldset__footer">
+                            <button type="submit"  (click)="afficherf1()" value="" class=" text-white button e-btn--3d -color-primary"
+                                data-disable-with="Saving..." >enregistrer et continuer</button>
+                        </footer>
+                    </form>
+                </div>
+                <!-- commande -->
+                <div *ngIf = "this.isCommande">
+                
+                        <header class="e-fieldset__header -divider-bottom">
+                                <div class="e-fieldset__title">
+                                    <h3 class="t-heading -size-s h-m0">
+                                        Commande du Client
+                
+                                    </h3>
+                                    <div class="e-fieldset__subtitle">
+                                        <p class="t-body -size-m h-m0">
+                                            We do not sell your details or share them without your permission. Read more in our <a
+                                                target="_blank" href="https://envato.com/privacy">privacy policy</a>.
+                                        </p>
+                
+                                    </div>
+                                </div>
+                            </header><form class="">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Type de tissus</label>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Choisir le type de  tissu</option>
+                                                <option value="1">Dietzner</option>
+                                                <option value="2">Ganila</option>
+                                                <option value="3">Brode</option>
+                                                <option value="3">Soie</option>
+                                              </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                            <label for="inputEmail4">Couleur du  tissus</label>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected>Choisir la couleur du tissu</option>
+                                                    <option value="1">Bleu</option>
+                                                    <option value="2">Jaune</option>
+                                                    <option value="3">Thioup</option>
+                                                  </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Model</label>
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                        <option selected>Baye Lahat</option>
+                                                        <option value="1">Baye Sonhibou</option>
+                                                        <option value="2">Khaftaane</option>
+                                                        <option value="3">Touki Ndiareme</option>
+                                                      </select>
+                                            </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Nombre de metre</label>
+                                        <input type="number" class="form-control" id="inputPassword4" placeholder="metre">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Date de livraison</label>
+                                    <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2">Address de livraison</label>
+                                    <input type="text" class="form-control" id="inputAddress2"
+                                        placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputZip">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <footer class="e-fieldset__footer">
+                                    <button type="submit" (click)="afficherf2()"  value="" class=" text-white button e-btn--3d -color-primary"
+                                        data-disable-with="Saving..." >enregistrer et continuer</button>
+                                </footer>
+                            </form>
+                        </div>
+                        <!-- mesure -->
+                        <div *ngIf ="this.isMesure">
+                
+                                <header class="e-fieldset__header -divider-bottom">
+                                        <div class="e-fieldset__title">
+                                            <h3 class="t-heading -size-s h-m0">
+                                                Mesure du Client
+                        
+                                            </h3>
+                                            <div class="e-fieldset__subtitle">
+                                                <p class="t-body -size-m h-m0">
+                                                    We do not sell your details or share them without your permission. Read more in our <a
+                                                        target="_blank" href="https://envato.com/privacy">privacy policy</a>.
+                                                </p>
+                        
+                                            </div>
+                                        </div>
+                                    </header><form class="">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">longueur</label>
+                                                <input type="number" class="form-control" id="inputEmail4" placeholder="en cm">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Coud</label>
+                                                <input type="number" class="form-control" id="inputEmail4" placeholder="en cm">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Epaule</label>
+                                                <input type="number" class="form-control" id="inputEmail4" placeholder="en cm">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Hance</label>
+                                                <input type="number" class="form-control" id="inputPassword4" placeholder="en cm">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputAddress">Taille</label>
+                                            <select id="inputState" class="form-control">
+                                                    <option selected>XXS</option>
+                                                    <option selected>XS</option>
+                                                    <option selected>S</option>
+                                                    <option selected>M</option>
+                                                    <option selected>L</option>
+                                                    <option>XL</option>
+                                                    <option>XXL</option>
+                                                    <option>XXXL</option>
+                                                    <option>4XL</option>
+                                                </select>
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <label for="inputAddress2">Address 2</label>
+                                            <input type="text" class="form-control" id="inputAddress2"
+                                                placeholder="Apartment, studio, or floor">
+                                        </div> -->
+                                        <!-- <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">City</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="inputState">State</label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="inputZip">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Check me out
+                                                </label>
+                                            </div>
+                                        </div> -->
+                                        <footer class="e-fieldset__footer">
+                                            <button type="submit"  value="" class=" text-white button e-btn--3d -color-primary"
+                                                data-disable-with="Saving..." >enregistrer et continuer</button>
+                                        </footer>
+                                    </form>
+                                </div>
+
+
+        </div>
+    </div>
+</section>

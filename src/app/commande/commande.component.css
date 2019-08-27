@@ -1,0 +1,16 @@
+.e-fieldset__footer {
+    background-color: #fafafa;
+    border-top: #e0e0e0 1px solid;
+    padding: 16px;
+    text-align: right;
+}
+
+
+.e-btn--3d.-color-primary {
+    
+    box-shadow: 0 2px 0 #6f9a37;
+    position: relative;
+}
+.e-btn.-color-primary, .-color-primary.e-btn--3d, .-color-primary.e-btn--outline {
+    background-color: #82b440;
+}
