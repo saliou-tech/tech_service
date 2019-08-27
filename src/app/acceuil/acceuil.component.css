@@ -113,13 +113,15 @@
 ._2sT86 {
     width: 100%;
     height: 100%;
-    display: -ms-flexbox;
+    
     display: flex;
 }
 
 .EurVi ._3Oe1A {
+    height: 220px;
+    width: auto;
     /* margin: 24px 16px 0; */
-    -ms-flex-direction: row;
+    /* -ms-flex-direction: row; */
     flex-direction: row;
 }
 .ZLSF6 {
