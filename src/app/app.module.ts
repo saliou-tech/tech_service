@@ -11,6 +11,9 @@ import { ViewProductComponent } from './view-product/view-product.component';
 import { PanierComponent } from './panier/panier.component';
 import { ClientComponent } from './client/client.component';
 import { CommandeComponent } from './commande/commande.component';
+import { MenuAdminComponent } from './admin/menu-admin/menu-admin.component';
+import { MenuLeftAdminComponent } from './admin/menu-left-admin/menu-left-admin.component';
+import { LoginComponent } from './admin/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { CommandeComponent } from './commande/commande.component';
     ViewProductComponent,
     PanierComponent,
     ClientComponent,
-    CommandeComponent
+    CommandeComponent,
+    MenuAdminComponent,
+    MenuLeftAdminComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
