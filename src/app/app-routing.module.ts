@@ -8,6 +8,7 @@ import { ClientComponent } from './client/client.component';
 import { CommandeComponent } from './commande/commande.component';
 import { MenuAdminComponent } from './admin/menu-admin/menu-admin.component';
 import { LoginComponent } from './admin/login/login.component';
+import { CategoriesComponent } from './admin/categories/categories.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'client', component: ClientComponent },
   { path: 'commande', component: CommandeComponent },
   { path: 'admin', component: LoginComponent },
+  { path: 'categories', component: CategoriesComponent }
   
   
 ];
