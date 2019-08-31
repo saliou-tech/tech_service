@@ -34,10 +34,10 @@
         <br>
         <div class="col-sm-9">
             <h2><div>Liste des categories</div></h2>
-            <div class="col-sm-8 offset-sm-8"> <button class="add_categorie">ajouter une cateorie</button></div>
-            <div class="col-sm-12 offset-sm-1">
+            <div class="col-sm-8 offset-sm-8"> <button class="add_categorie btn" data-toggle="modal" data-target="#myModalAddCategorie">ajouter une cateorie</button></div>
+            <div class="col-sm-12  table-responsive">
                 <br><br>
-                    <table class="table table-bordered">
+                    <table class="table table-bordered table-responsive col-sm-12">
                         
                             <thead>
                               <tr>
@@ -54,23 +54,27 @@
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td class="collapsing"> <div class="btn-group"><button class="add_categorie">voir</button></div>
-                                    <div class="btn-group"><button class="add_categorie">voir</button></div>
-                                    <div class="btn-group"><button class="add_categorie">voir</button></div></td>
+                                <td class="collapsing"> 
+                                    <div class="btn-group"><button class="modifier_categorie btn">modifier</button></div>
+                                    <div class="btn-group"><button class="delete_categorie btn btn-danger">supprimer</button></div></td>
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
-                                <td>@fat</td>
+                                <td class="collapsing"> 
+                                  <div class="btn-group"><button class="modifier_categorie">modifier</button></div>
+                                  <div class="btn-group"><button class="delete_categorie btn ">supprimer</button></div></td>
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
                                 <td colspan="">Larry the Bird</td>
                                 <td>@twitter</td>
                                 <td>@twitter</td>
-                                <td>@twitter</td>
+                                <td class="collapsing"> 
+                                  <div class="btn-group"><button class="modifier_categorie">modifier</button></div>
+                                  <div class="btn-group"><button class="delete_categorie btn btn-danger">supprimer</button></div></td>
                                 
                                 
                               </tr>
@@ -81,4 +85,75 @@
 
     </div>
 
+
+
 </div>
+
+
+
+
+<!-- 
+    modal pour ajoutez une categorie -->
+
+    <div class="modal fade" id="myModalAddCategorie">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <div>
+                <button type="button" class="close button4" data-dismiss="modal">fermer</button><br>
+            <span class="modal-title" id="part"  ></span>
+            <span class="modal-title Tcolor" id="com">  </span>
+  
+            
+          </div>
+            
+          </div>
+          <br>
+          
+          <!-- Modal body -->
+          
+            <div class="col-md-12 center-block style=float:none; width: 400px;">
+                <h2 class=" text-center cat">Ajoutez une categorie</h2>
+                <form class="border form">
+                    <br>
+        
+                    <div class="form-group  col-sm-10 offset-sm-1">
+                      <label for="exampleFormControlSelect1">Type</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Habillement</option>
+                        <option>accessoires</option>
+                        <option>Cafe</option>
+                        
+                      </select>
+                    </div>
+                    <div class="form-group col-sm-10 offset-sm-1">
+                        <label for="exampleInputPassword1">Nom</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nom">
+                    </div>
+                    <div class="form-group col-sm-10 offset-sm-1">
+                      <label for="exampleFormControlTextarea1">Libelle</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class=" col-sm-12 offset-sm-1 ">
+        
+                        <button type="submit" value=""
+                            class="center col-sm-10 text-white button e-btn--3d -color-primary buttonconnect"><br>
+                            Ajouter
+                        </button>
+                    </div>
+                    <br><br>
+                </form>
+                <br><br>
+            </div>
+        
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success button4" data-dismiss="modal"><span class=" glyphicon glyphicon-ok " id="part"> </span>Annuler</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
