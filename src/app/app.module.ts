@@ -15,6 +15,7 @@ import { MenuAdminComponent } from './admin/menu-admin/menu-admin.component';
 import { MenuLeftAdminComponent } from './admin/menu-left-admin/menu-left-admin.component';
 import { LoginComponent } from './admin/login/login.component';
 import { CategoriesComponent } from './admin/categories/categories.component';
+import { AritcleComponent } from './admin/aritcle/aritcle.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CategoriesComponent } from './admin/categories/categories.component';
     MenuAdminComponent,
     MenuLeftAdminComponent,
     LoginComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    AritcleComponent
   ],
   imports: [
     BrowserModule,
