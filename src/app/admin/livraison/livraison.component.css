@@ -98,8 +98,8 @@
 }
 
 .add_categorie{
-border: 1px solid  #6ba229;
-background-color: #6ba229;
+border: 1px solid  #2baacd;
+background-color: #2baacd;
 color: hsl(0, 0%, 100%);
 text-shadow: none;
 padding: 16px 24px;
@@ -126,7 +126,7 @@ border-radius: 25px;
     transition: all 0.2s ease-in;
     box-shadow: 1px 1px 3px -1px hsl(0, 0%, 90%);
     box-shadow: 1px 1px 3px 0 hsla(0, 0%, 0%, .07);
-    background-color: #6ba229;
+    background-color: #2baacd;
     color: hsl(0, 0%, 100%);
     padding: 16px 0;
     margin-left: -2px;

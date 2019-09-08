@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminServiceService } from 'src/app/admin-service.service';
 
 @Component({
   selector: 'app-menu-admin',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuAdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private adminservice :AdminServiceService) { }
 
   ngOnInit() {
+    
+
   }
 
 }
