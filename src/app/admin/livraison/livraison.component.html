@@ -1,3 +1,4 @@
+
 <section class="container-fluid">
     <app-menu-admin></app-menu-admin>
 
@@ -33,11 +34,11 @@
         </div>
         <br>
         <div class="col-sm-9">
-            <h2><div>Liste des categories</div></h2>
-            <div class="col-sm-8 offset-sm-8"> <button class="add_categorie btn" data-toggle="modal" data-target="#myModalAddCategorie">ajouter une cateorie</button></div>
+            <h2><div>Liste des livraisons</div></h2>
+            <div class="col-sm-8 offset-sm-8"> <button class="add_categorie btn" data-toggle="modal" data-target="#myModalAddCategorie">ajouter une livraison</button></div>
             <div class="col-sm-12 offset-sm-1 table-responsive">
                 <br><br>
-                    <table class="table table-bordered table-hover table-responsive col-sm-12">
+                    <table class="table table-bordered  table-hover table-responsive col-sm-12">
                         
                             <thead class="col-sm-12">
                               <tr>
@@ -58,7 +59,6 @@
                                     <button class="btn btn-outline-primary espace">Modifier</button>
 
                                           <button class="btn btn-outline-danger ">Suprimer</button>
-                                  
                                   </td>
                               </tr>
                               <tr>
@@ -68,12 +68,10 @@
                                 <td>@fat</td>
                                 <td class="collapsing"> 
 
+                                    <button class="btn btn-outline-primary espace">Modifier</button>
 
-                                 <button class="btn btn-outline-primary espace">Modifier</button>
+                                    <button class="btn btn-outline-danger ">Suprimer</button>
 
-                                          <button class="btn btn-outline-danger ">Suprimer</button>
-                                
-                                
                                 </td>
                               </tr>
                               <tr>
@@ -127,11 +125,11 @@
           <!-- Modal body -->
           
             <div class="col-md-12 center-block style=float:none; width: 400px;">
-                <h2 class=" text-center cat">Ajoutez une categorie</h2>
+                <h2 class=" text-center cat">Ajoutez une livraison</h2>
                 <form class="border form">
                     <br>
         
-                    <div class="form-group  col-sm-10 offset-sm-1">
+                    <!-- <div class="form-group  col-sm-10 offset-sm-1">
                       <label for="exampleFormControlSelect1">Type</label>
                       <select class="form-control" id="exampleFormControlSelect1">
                         <option>Habillement</option>
@@ -139,14 +137,19 @@
                         <option>Cafe</option>
                         
                       </select>
-                    </div>
+                    </div> -->
                     <div class="form-group col-sm-10 offset-sm-1">
-                        <label for="exampleInputPassword1">Nom</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nom">
+                        <label for="exampleInputPassword1">Date</label>
+                        <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Nom">
                     </div>
-                    <div class="form-group col-sm-10 offset-sm-1">
-                      <label for="exampleFormControlTextarea1">Libelle</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="form-group col-sm-10 offset-sm-1"> 
+                      <label for="exampleFormControlTextarea1">Etat</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Disponible</option>
+                        <option>non disponible</option>
+                        <option></option>
+                        
+                      </select>
                     </div>
                     <div class=" col-sm-12 offset-sm-1 ">
         

@@ -3,6 +3,11 @@
     /* display: -ms-flexbox; */
     display: flex;
 } 
+
+
+.espace{
+    margin-right: 10px;
+}
 .Vd9D9{
     font-family: -apple-system, BlinkMacSystemFont, segoe ui, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, arial, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -74,7 +79,7 @@
     color: #ffffff;
     
 
-    border-radius: 20px;
+    border-radius: 25px;
 
 }
 .modifier_categorie{
@@ -203,7 +208,4 @@ border-radius: 25px;
 }
 .cat{
     color: #00B5AD !important;
-}
-.espace{
-    margin-right: 5px;
 }

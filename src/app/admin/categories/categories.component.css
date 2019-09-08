@@ -60,6 +60,10 @@
     border-radius: 25px;
 
 } */
+
+.espace{
+    margin-right: 5px;
+}
 .delete_categorie{
     font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
  
@@ -74,7 +78,7 @@
     color: #ffffff;
     
 
-    border-radius: 25px;
+    border-radius: 20px;
 
 }
 .modifier_categorie{
@@ -90,7 +94,7 @@
     color: hsl(0, 0%, 100%);
     
 
-    border-radius: 25px;
+    border-radius: 20px;
 
 }
 
@@ -104,7 +108,7 @@ padding: 16px 24px;
 flex: 1;
 background-image: none;
 height: 56px;
-border-radius: 25px;
+border-radius: 20px;
 }
 .collapsing{
     width: 1px;

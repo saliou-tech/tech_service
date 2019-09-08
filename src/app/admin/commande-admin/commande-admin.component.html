@@ -1,3 +1,4 @@
+
 <section class="container-fluid">
     <app-menu-admin></app-menu-admin>
 
@@ -33,18 +34,20 @@
         </div>
         <br>
         <div class="col-sm-9">
-            <h2><div>Liste des categories</div></h2>
-            <div class="col-sm-8 offset-sm-8"> <button class="add_categorie btn" data-toggle="modal" data-target="#myModalAddCategorie">ajouter une cateorie</button></div>
+            <h2><div>Liste des Commandes </div></h2>
+            <div class="col-sm-8 offset-sm-8"> <button class="add_categorie btn" data-toggle="modal" data-target="#myModalAddCategorie">ajouter un article</button></div>
             <div class="col-sm-12 offset-sm-1 table-responsive">
                 <br><br>
-                    <table class="table table-bordered table-hover table-responsive col-sm-12">
+                    <table class="table table-bordered  table-hover table-responsive col-sm-12">
                         
                             <thead class="col-sm-12">
                               <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Type</th>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Libelle</th>
+                                <th scope="col">Nom du client</th>
+                                <th scope="col">mesure du client</th>
+                                <th scope="col">model</th>
+                                <th scope="col">livraison </th>
+                                <th scope="col">prix</th>
                                 <th scope="col">Actions</th>
                               </tr>
                             </thead>
@@ -52,40 +55,48 @@
                               <tr>
                                 <th scope="row">1</th>
                                 <td>Mark</td>
+                                <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
+                                <td>@mdo</td>
                                 <td class="collapsing"> 
+
                                     <button class="btn btn-outline-primary espace">Modifier</button>
 
-                                          <button class="btn btn-outline-danger ">Suprimer</button>
-                                  
+                                    <button class="btn btn-outline-danger ">Suprimer</button>
                                   </td>
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
+                                <td>Mark</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
+                                <td>@mdo</td>
                                 <td class="collapsing"> 
+                                    
+                                    <button class="btn btn-outline-primary espace">Modifier</button>
+
+                                    <button class="btn btn-outline-danger ">Suprimer</button>
 
 
-                                 <button class="btn btn-outline-primary espace">Modifier</button>
 
-                                          <button class="btn btn-outline-danger ">Suprimer</button>
-                                
-                                
+
                                 </td>
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
                                 <td colspan="">Larry the Bird</td>
                                 <td>@twitter</td>
+                                <td>Mark</td>
                                 <td>@twitter</td>
+                                <td>@mdo</td>
                                 <td class="collapsing"> 
 
                                     <button class="btn btn-outline-primary espace">Modifier</button>
 
-                                    <button class="btn btn-outline-danger ">Suprimer</button>
+                                    <button class="btn btn-outline-danger ">Suprimer</button> 
+                                  
                                 </td>
                                 
                                 
@@ -107,14 +118,14 @@
 <!-- 
     modal pour ajoutez une categorie -->
 
-    <div class="modal fade" id="myModalAddCategorie">
+    <div class="modal fade " id="myModalAddCategorie">
       <div class="modal-dialog">
         <div class="modal-content">
         
           <!-- Modal Header -->
           <div class="modal-header">
             <div>
-                <button type="button" class="close button4" data-dismiss="modal">fermer</button><br>
+                <button type="button" class="close button4" data-dismiss="modal" style="float:right;">fermer</button><br>
             <span class="modal-title" id="part"  ></span>
             <span class="modal-title Tcolor" id="com">  </span>
   
@@ -126,8 +137,8 @@
           
           <!-- Modal body -->
           
-            <div class="col-md-12 center-block style=float:none; width: 400px;">
-                <h2 class=" text-center cat">Ajoutez une categorie</h2>
+            <div class="col-sm-12 center-block style=float:none; width: 400px;">
+                <h2 class=" text-center cat">Ajoutez une article</h2>
                 <form class="border form">
                     <br>
         
@@ -140,14 +151,36 @@
                         
                       </select>
                     </div>
+                    <div class="form-group  col-sm-10 offset-sm-1">
+                            <label for="exampleFormControlSelect1">Categorie</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Habillement</option>
+                              <option>accessoires</option>
+                              <option>Cafe</option>
+                              
+                            </select>
+                          </div>
                     <div class="form-group col-sm-10 offset-sm-1">
                         <label for="exampleInputPassword1">Nom</label>
                         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nom">
                     </div>
                     <div class="form-group col-sm-10 offset-sm-1">
+                            <label for="exampleInputPassword1">Prix</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Prix">
+                    </div>
+                    <div class="form-group col-sm-10 offset-sm-1">
                       <label for="exampleFormControlTextarea1">Libelle</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
+                    <div class="input-group mb-3 col-sm-10 offset-sm-1">
+                            <!-- <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroupFileAddon01">Image</span>
+                            </div> -->
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" >
+                              <label class="custom-file-label" for="inputGroupFile01"></label>
+                            </div>
+                          </div>
                     <div class=" col-sm-12 offset-sm-1 ">
         
                         <button type="submit" value=""

@@ -10,6 +10,8 @@ import { MenuAdminComponent } from './admin/menu-admin/menu-admin.component';
 import { LoginComponent } from './admin/login/login.component';
 import { CategoriesComponent } from './admin/categories/categories.component';
 import { AritcleComponent } from './admin/aritcle/aritcle.component';
+import { LivraisonComponent } from './admin/livraison/livraison.component';
+import { CommandeAdminComponent } from './admin/commande-admin/commande-admin.component';
 
 
 const routes: Routes = [
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'commande', component: CommandeComponent },
   { path: 'admin', component: LoginComponent },
   { path: 'categories', component: CategoriesComponent },
-  { path: 'addarticles', component: AritcleComponent }
+  { path: 'addarticles', component: AritcleComponent },
+  { path: 'livraison', component: LivraisonComponent },
+  { path: 'commande-admin', component: CommandeAdminComponent }
   
   
 ];
