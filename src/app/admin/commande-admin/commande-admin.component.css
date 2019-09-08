@@ -137,11 +137,11 @@ border-radius: 25px;
 /* css modal */
 .e-btn--3d.-color-primary {
     
-    box-shadow: 0 2px 0 #6f9a37;
+    box-shadow: 0 2px 0 #2baacd;
     position: relative;
 }
 .e-btn.-color-primary, .-color-primary.e-btn--3d, .-color-primary.e-btn--outline {
-    background-color: #82b440;
+    background-color: #2baacd;
 }
 
 
